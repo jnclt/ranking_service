@@ -22,7 +22,7 @@ For API description, please see the docstrings in rankings/views.py
 
 # Installation
 
-## 1. Create and/or activate a Virtual Environment
+## 1. Create and/or activate [virtualenv](http://www.virtualenv.org/en/latest/virtualenv.html#installation)
 
 ```bash
 . activate_venv
@@ -33,7 +33,7 @@ For API description, please see the docstrings in rankings/views.py
 ./install_dependencies
 ```
 
-## 3. Synchronize Database
+## 3. Synchronize database
 
 ```bash
 ./manage.py syncdb --noinput
@@ -47,12 +47,12 @@ For API description, please see the docstrings in rankings/views.py
 
 # Tests
 
-## Analyze Source code
+## Analyze source code
 ```bash
 ./analyze
 ```
 
-## Run Tests
+## Run tests
 
 ```bash
 ./run_tests [ unit | integration | system ]
