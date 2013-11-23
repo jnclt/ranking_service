@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -e
+
+venv/bin/flake8 ranking_service rankings tests --max-line=120

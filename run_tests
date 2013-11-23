@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+set -e
+
+if [ $1 ]; then
+	WHERE="tests/$1"
+else
+	WHERE="tests"
+fi
+
+venv/bin/python manage.py test --logging-clear-handlers --with-progressive --with-coverage --cover-package=rankings --where=$WHERE
